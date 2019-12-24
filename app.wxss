@@ -1,0 +1,84 @@
+/* 功能封装1：白色底色，间隔20封装 */
+/* 方法 一  利用背景色的 margin-top*/
+ page{
+  background-color: #f1f1f1;
+}
+/*
+.mgt20 {
+  margin-top: 20rpx;
+}
+.bgw{
+  background-color: #fff;
+} */
+
+/* 功能封装2 封装一个专门用于 间隔的类 */
+.divider{
+  width: 100%;
+  height: 20rpx;
+  background-color: #f1f1f1;
+  box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, .1) insert;
+}
+
+/* 功能封装3 细线边框 */
+.bdr{
+  position: relative;
+}
+.bdr::after{
+  content: "";
+  width: 1rpx;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ccc;
+}
+
+/* 功能封装4 箭头 > 伪类 */
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.arrow::after{
+    content: "";
+    width: 15rpx;
+    height: 15rpx;
+    border-top: 3rpx solid #ccc;
+    border-right: 3rpx solid #ccc;
+    transform: rotate(45deg);
+}
+
+/* 功能封装5 水平 和 竖直 垂直居中 */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 功能封装6 列表的封装 */
+.cell{
+    font-size: 16px;
+    background-color: #fff;
+}
+.cell-item{
+    border-bottom: 1rpx solid #ddd;
+    padding: 20rpx 30rpx;
+}
+
+/* 功能封装7 星星评价封装 */
+.star-before{
+	color: #f19e38;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*通过设置宽度 进行点亮 */
+	width: 90%;
+	overflow: hidden;
+}
+
+/* 功能封装8 单行超出宽度变省略号  */
+.ell{
+     overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

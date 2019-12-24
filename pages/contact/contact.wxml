@@ -1,0 +1,33 @@
+<view class="divider"></view>
+
+<view class="cell">
+    <navigator class="cell-item">
+        <text class="text arrow">清除缓存</text>
+    </navigator>
+    <navigator class="cell-item">
+        <text class="text arrow">清除缓存</text>
+    </navigator >
+    <navigator class="cell-item">
+        <text class="text arrow">清除缓存</text>
+    </navigator >
+    <navigator class="cell-item">
+        <text class="text arrow">清除缓存</text>
+    </navigator >
+</view>
+
+<view class="divider"></view>
+
+<view class="cell">
+    <navigator class="cell-item">
+        <text class="text arrow">清除缓存</text>
+    </navigator>
+    <navigator class="cell-item">
+        <text class="text arrow">清除缓存</text>
+    </navigator >
+    <navigator class="cell-item">
+        <text class="text arrow">清除缓存</text>
+    </navigator >
+    <navigator class="cell-item">
+        <text class="text arrow">清除缓存</text>
+    </navigator >
+</view>

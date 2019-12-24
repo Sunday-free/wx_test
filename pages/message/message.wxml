@@ -1,0 +1,15 @@
+<view class="card">
+    <text class="card-title">标题1111</text>
+    <text class="card-date">2017-12-11</text>
+    <image class="card-img" src="https://aecpm.alicdn.com/simba/img/TB15tIjGVXXXXcoapXXSutbFXXX.jpg" mode="aspectFill"></image>
+    <text class="card-desc">越努力越幸运~</text>
+    <text class="card-read text arrow">查看详情</text>
+</view>
+
+<view class="card">
+    <text class="card-title">标题1111</text>
+    <text class="card-date">2017-12-11</text>
+    <image class="card-img" src="https://aecpm.alicdn.com/simba/img/TB15tIjGVXXXXcoapXXSutbFXXX.jpg" mode="aspectFill"></image>
+    <text class="card-desc">越努力越幸运~</text>
+    <text class="card-read text arrow">查看详情</text>
+</view>
