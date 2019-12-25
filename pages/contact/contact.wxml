@@ -2,32 +2,59 @@
 
 <view class="cell">
     <navigator class="cell-item">
-        <text class="text arrow">清除缓存</text>
+        <text class="text arrow">表单输入框</text>
     </navigator>
-    <navigator class="cell-item">
-        <text class="text arrow">清除缓存</text>
-    </navigator >
-    <navigator class="cell-item">
-        <text class="text arrow">清除缓存</text>
-    </navigator >
-    <navigator class="cell-item">
-        <text class="text arrow">清除缓存</text>
-    </navigator >
+    <view class="cell-item">
+        <input type="text"></input>
+    </view>
+    <view class="cell-item">
+        <input type="idcard"></input>
+    </view>
+    <view class="cell-item">
+        <input type="password"></input>
+    </view>
+    <view class="cell-item">
+        <input type="digit"></input>
+    </view>
 </view>
 
 <view class="divider"></view>
 
 <view class="cell">
     <navigator class="cell-item">
-        <text class="text arrow">清除缓存</text>
+        <text class="text arrow">其他表单组件</text>
     </navigator>
-    <navigator class="cell-item">
-        <text class="text arrow">清除缓存</text>
-    </navigator >
-    <navigator class="cell-item">
-        <text class="text arrow">清除缓存</text>
-    </navigator >
-    <navigator class="cell-item">
-        <text class="text arrow">清除缓存</text>
-    </navigator >
+    <view class="cell-item">
+        <checkbox-group>
+            <checkbox checked></checkbox>
+            <checkbox></checkbox>
+        </checkbox-group>
+    </view>
+    <view class="cell-item">
+        <radio-group bindchange="radioChangeHandle">
+            <radio color="#333" value="male" data-param="1" checked >man</radio>
+            <radio value="female" data-param="2">woman</radio>
+            <radio disabled>保密</radio>
+        </radio-group>
+        <switch color="#f60"></switch>
+    </view>
 </view>
+
+<view class="cell">
+    <navigator class="cell-item">
+        <text class="text arrow">冒泡</text>
+    </navigator>
+    <navigator url="#" class="cell-item father" bindtap="fatherTapHandle">
+        父亲
+        <view class="son" catchtap="sonTapHandle" data-index="1">儿子</view>
+    </navigator>
+</view>
+
+
+<wxs module="foo">
+var sum = function(a,b){
+    return a+b;
+}
+module.exports.sum = sum;
+</wxs>
+<text>{{foo.sum(1,1)}}</text>
